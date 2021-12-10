@@ -1,7 +1,7 @@
 # Morphware: Tellor
 
 ## Directory Structure
-.
+```.
 ├── run
 │   ├── src
 │   │   ├── controller
@@ -18,4 +18,4 @@
 │   └── local.py
 ├── test
 ├── README.md
-└── requirements.txt
+└── requirements.txt```
