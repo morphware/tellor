@@ -40,5 +40,4 @@ contract endPoint is UsingTellor {
         if (_value > 0) return (true, _value, _time);
         return (false, 0, 0);
       }
-
     }
