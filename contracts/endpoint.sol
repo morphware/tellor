@@ -6,7 +6,7 @@ import "./SafeMath.sol";
 import "./UsingTellor.sol";
 import "./TellorPlayground.sol";
 
-contract endPoint is UsingTellor {
+contract Endpoint is UsingTellor {
 	using SafeMath for uint256;
 
 	// endpoint
@@ -17,7 +17,7 @@ contract endPoint is UsingTellor {
         tellor = ITellor(_tellor);
     }
 
-    function getEndPoint(bytes32 _endpoint) returns (bytes32) {
+    function getEndpoint(bytes32 _endpoint) returns (bytes32) {
         return _endpoint;
 	
     }
