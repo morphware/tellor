@@ -19,6 +19,7 @@ contract endPoint is UsingTellor {
 
     function getEndPoint(bytes32 _endpoint) returns (bytes32) {
         return _endpoint;
+	
     }
     
     function getDataBefore(uint256 _requestId, uint256 _timestamp)
