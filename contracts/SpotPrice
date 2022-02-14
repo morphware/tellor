@@ -2,7 +2,6 @@
 pragma solidity 0.8.0;
 
 import "./ITellor.sol";
-import "./SafeMath.sol";
 import "./UsingTellor.sol";
 
 contract spotPrice {
