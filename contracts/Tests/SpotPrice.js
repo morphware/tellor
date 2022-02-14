@@ -1,1 +1,1 @@
-
+spotPrice Test
