@@ -1,0 +1,35 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.0;
+
+import "./ITellor.sol";
+import "./SafeMath.sol";
+import "./UsingTellor.sol";
+
+contract spotPrice {
+    ITellor public tellor;
+
+    constructor(address payable _tellor) {
+        tellor = ITellor(_tellor);
+    }
+
+    function getCurrentValue(bytes32 _queryId)
+        public
+        view
+        returns (
+            bool _ifRetrieve,
+            bytes memory _value,
+            uint256 _timestampRetrieved
+        )
+    {
+        uint256 _count = tellor.getNewValueCountbyQueryId(_queryId);
+        uint256 _time = tellor.getTimestampbyQueryIdandIndex(
+            _queryId,
+            _count - 1
+        );
+        _value = tellor.retrieveData(_queryId, _time);
+        if (keccak256(_value) != keccak256(bytes("")))
+            return (true, _value, _time);
+        return (false, bytes(""), _time);
+    }
+
+  
