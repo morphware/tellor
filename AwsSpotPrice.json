@@ -1,19 +1,1 @@
-{
-    "type": "AwsSpotPrice",
-    "abi": [
-        {
-            "type": "string",
-            "name": "zone",
-        },
-        {
-            "type": "string",
-            "name": "instance",
-        },
-    ],
-    "response": {
-        "type": "ufixed256x18",
-        "packed": false,
-    }
-}
 
-//AWS SpotPrice
