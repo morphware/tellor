@@ -1,7 +1,1 @@
-{"type":"SpotPrice","asset":"btc","currency":"usd"} //Query Descriptor
-
-
-abi.encode("SpotPrice", abi.encode("btc", "usd")) // QueryData
-
-
 
